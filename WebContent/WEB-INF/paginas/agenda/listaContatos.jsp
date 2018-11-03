@@ -19,6 +19,22 @@
 				<th>Ações</th>
 			</tr>
 		</thead>
+		
+		<tbody>
+			<jstl:forEach items="${listaContatos}" var="contato">
+				<tr>
+					<td>${contato.nome}</td>
+					<td>${contato.idade}</td>
+					<td>${contato.telefone}</td>
+					<td>
+						<a href="${pageContext.request.contextPath}/agenda/editar?id=${contato.id}">Editar</a> | 
+						<a href="${pageContext.request.contextPath}/agenda/excluir?id=${contato.id}">Excluir</a>
+					</td>
+				</tr>
+			</jstl:forEach>
+		</tbody>
+		
 	</table>
+	<a href="${pageContext.request.contextPath}/agenda/incluir">Criar novo contato...</a>
 </body>
 </html>

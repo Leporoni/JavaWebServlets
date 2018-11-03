@@ -3,6 +3,12 @@
         <wb-resource deploy-path="/" source-path="/WebContent" tag="defaultRootSource"/>
         <wb-resource deploy-path="/WEB-INF/classes" source-path="/src"/>
         <wb-resource deploy-path="/WEB-INF/classes" source-path="/resources"/>
+        <dependent-module archiveName="java-agenda-repositorios.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/java-agenda-repositorios/java-agenda-repositorios">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="java-agenda-entidades.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/java-agenda-entidades/java-agenda-entidades">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
         <property name="context-root" value="java-web-servlets"/>
         <property name="java-output-path" value="/java-web-servlets/build/classes"/>
     </wb-module>

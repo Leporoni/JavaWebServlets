@@ -3,6 +3,8 @@
 	<name>java-web-servlets</name>
 	<comment></comment>
 	<projects>
+		<project>java-agenda-repositorios</project>
+		<project>java-agenda-entidades</project>
 	</projects>
 	<buildSpec>
 		<buildCommand>
